@@ -1,0 +1,159 @@
+
+[CSS란?]
+CSS 또는 캐스케이딩 스타일 시트(Cascading Style Sheet)는 
+마크업 언어가 실제로 표시되는 방법을 기술하는 언어(디자인적인 부분을 서술)
+
+1996년 W3C의 주도하에 첫 번째 CSS 버전인 CSS Level 1이 발표.
+css1 -> css2 -> css3(계속적으로 추가)
+
+[CSS 사용의 의의]
+문서의 구조와 표현을 분리할 수 있다는 점을 들 수 있으며 이는 구조와 표현을 분리함
+HTML 문서의 구조 표현 언어
+CSS  문서의 다양한 표현을 하는 디자인인 부분을 서술하는 언어
+JAVACRIPT 문서의 요소에 동적인 작업을 서술하는 언어
+
+[스타일을 선언하는 방법]
+1.내부 스타일 시트 : <head>와 </head>사이에 선언
+<style type = "text/css" 또는 “text/JavaScript">
+   선택자{속성: 속성값}
+</style>
+
+
+2.외부 스타일 시트 : 외부의 파일로 작성한 후 <LINK> 또는 @import을 이용하여 선언하는 방법
+<LINK>를 이용하여 연결
+- 형식 : <LINK rel = "stylesheet" type = "text/css" href = "파일명“>
+
+
+3.인라인 스타일 시트 : 일반 html 태그에 스타일을 직접 지정하는 방법
+- <태그 style = "속성:속성값; 속성:속성값“> 문장 </태그>
+ 
+
+[스타일 시트의 구성요소]
+=>선택자{선언부분}
+=>선언{속성1:속성1값; 속성2:속성2값;}
+
+· 선택자(Selector)
+    - HTML 문서에서 스타일을 정의할 대상을 의미한다.
+    - 하나 또는 그 이상의 선택자가 지정될 수 있다.
+    - 선택자의 나열은 “,”로 한다.
+
+· 선언(Declaration)
+    - 선택자에게 지정한 스타일을 의미한다.
+    - 속성(Property)과 속성값(Value)으로 구성된다.
+    - 속성과 속성값은 “:”으로 구분한다.
+    - 선언은 반드시 “;”으로 끝나야 한다. 
+
+
+선택자 종류
+1. 전체 선택자 - 모든 요소를 선택
+  *{속성:속성값;}
+
+2. 태그 선택자 - 특정 태그 요소를 선택
+   태그명{속성:속성값;}
+
+3. 클래스 선택자 
+   <태그 class="선택자명"> 이렇게 태그에 먼저 클래스명을 설정하고
+   .클래스명{속성:속성값;}으로 선언하고
+   클래스 선택자는 하나의 요소나 여러개 요소에 스타일을 선언할 수 있다
+
+4. 아이디 선택자
+   <태그 id="선택자명"> 이렇게 태그에 먼저 아이디명을 설정하고
+   #아이디명{속성:속성값;}으로 선언
+   하나의 요소에만 스타일 적용
+   
+5. 자식 선택자
+   선택된 요소에 바로 아래에 있는 요소에 스타일을 지정할때 
+   선택자명 < 태그명 {속성:속성값;}
+
+6. 형제 선택자
+   선택된 요소 바로 옆에 있는 요소 또는 떨어져 있는 요소
+       선택자 + 선택자{속성:속성값;}
+       선택자 ~ 선택자{속성:속성값;}
+
+
+[ Font 관련 스타일]
+- font "값들만“ : 대표속성
+- font-family : 글꼴, 글꼴 이름은 쉼표(,)로 구분, 글꼴 이름이 두 단어 이상이면 큰 따옴표로 묶는다. 브라우저는 앞에 있는 글꼴 부터 보여준다.
+- font-style "normal, italic, oblique" : 기울임꼴을 적용
+- font-variant "normal, small-caps" :
+  small-caps 크기가 작은 대문자
+- font-weight "normal, bold, 100～900" : 글자 굵기
+  normal=400, bold=700, 숫자는 인식 못하는 경우 있음
+- font-size "숫자em(상위 element 크기에 배수), 숫자pt" : 글자 크기 유전되지 않음
+
+ 
+
+[Text 관련 스타일]
+- line-height "normal, 숫자, 숫자em, %“ : 줄간격
+- text-indent "숫자em, 퍼센트, 숫자“ : 들여쓰기, 음수사용시 내어쓰기
+- text-align "left, right, center, justify" : 텍스트나 이미지 수평정렬
+- text-decoration “none, underline, overline, line-through" : 줄 긋기 유전되지 않음
+- letter-spacing "normal, 숫자em, 숫자“ : 글자 간격
+- text-transform "capitalize, uppercase, lowercase, none" : 영문자 변환 첫글자만 대문자 소문자
+- vertical-align "baseline, sup, sub, middle, text-top, - top, text-bottom, bottom" :텍스트나 이미지 수직정렬
+
+
+
+[색상과 배경에 관련된 스타일]
+- color "영문자, RGB“ : 글자 및 밑줄 색
+- background-color "영문자, RGB, transparent" : 배경색
+- background-image "none, url(파일위치)“ : 배경 그림
+- background-repeat "repeat, repeat-x, repeat-y, no-repeat" : 배경이미지 반복 여부
+- background-attachment "scroll, fixed" : 화면이 스크롤 될 때 이동여부
+- background-position "top, bottom, left, center, right, 가로% 세로%“ : 이미지 반복 여부 가로p 세로p(음수 사용됨)       
+
+
+[배치]
+float:배치 
+float:left;요소를 왼쪽 배치
+float:right;요소를 오른쪽 배치
+*****웹페이지를 가운데 정렬은 margin: 0 auto;
+
+
+clear: both; float배치설정을 무시하고 새롭게 배치를 하는 속성
+clear:left;
+clear:right;
+
+margin: 요소의 테두를 기준으로 바깥쪽 여백
+margin: 0 0; 마진의 세로값 가로값
+margin:0 0 0; 위 좌우 아래
+margin: 0 0 0 0; top right bottom left
+margin-top, margin-right, margin-bottom, margin-left 하나하나 마진을 적용할때
+*****두개요소의 마진값이 중복이 될때 큰값이 적용됨.
+
+
+padding:요소의 테두를 기준으로 안쪽 여백
+padding: 0 0; 패딩의 세로값 가로값
+padding:0 0 0; 위 좌우 아래
+padding: 0 0 0 0; top right bottom left
+padding-top, padding-right, padding-bottom, padding-left 하나하나 패딩을 적용할때
+*****패딩은 안쪽 여백이므로 값이 요소의 가로값, 세로값에서 벗어나면 요소가 크기가 변화됨
+
+
+position:요소(태그)를 내가 원하는 위치에 배치
+ 
+top, right, bottom, left(기본으로 top, left를 사용)
+*******position들을 특정한 영역을 기준으로할때는 
+     특정영역의 선택자에게 position:relative; 함
+
+    position:absolute; 절대값으로 원하는 위치에 배치
+    position:relative; 상대적(다른요소에 영향을 받음)으로 원하는 위치에 배치 
+    position:fixed; 원하는 위치에 고정하여 배치
+    position:static; 문서의 흐름에 맞춰서 배치
+
+
+
+인라인레벨요소
+ img, a, span, strong
+ 주로 내용부분 즉 화면에 표시한 콘텐츠들
+ 한줄에 여러개가 정렬.
+ 자신만 크기를 인식하여 표시함
+ width, height를 적용하여 사용할 수 없다.
+
+
+
+블록레벨요소
+ div, p, ul, li, h1~h6........
+ 기본적으로 세로정렬
+ 한줄에는 하나차지합니다 즉 가로폭을 자신이 100%인식함
+ width, height를 적용하여 사용합니다    

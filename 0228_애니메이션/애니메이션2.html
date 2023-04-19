@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 50px;
+            padding-bottom: 500px;
+        }
+
+        .box1 {
+            width: 150px;
+            height: 150px;
+            border: 2px solid #000;
+            transform: rotate(0deg);
+            transition-delay: 0s;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .box1:hover {
+            transition-delay: 1s;
+            transition-duration: 0.7s;
+            transition-timing-function: ease-in-out;
+            transform: rotate(360deg);
+        }
+
+        .box1-1 {
+            margin-top: 100px;
+            width: 150px;
+            height: 150px;
+            border: 2px solid #000;
+            transform: rotate(0deg);
+            transition-delay: 0s;
+            transition-duration: 05s;
+            transition-property: all;
+            transition-timing-function: ease-in-out;
+        }
+
+        .box1-1:hover {
+            transform: rotate(360deg);
+        }
+
+        .box1-2 {
+            margin-top: 100px;
+            width: 150px;
+            height: 150px;
+            border: 2px solid #000;
+            transform: rotate(0deg);
+            transition: all 0.5s ease-in-out;
+        }
+
+        .box1-2:hover {
+            transform: rotate(360deg);
+        }
+
+        .box1-3 {
+            margin-top: 100px;
+            width: 150px;
+            height: 150px;
+            border: 2px solid #000;
+            transform: rotate(0deg);
+            transition: transform 0.5s, width 1s ease-in-out;
+        }
+
+        .box1-3:hover {
+            transform: rotate(360deg);
+            width: 500px;
+        }
+
+        .box2 {
+            margin-top: 100px;
+            width: 150px;
+            height: 150px;
+            border: 2px solid #000;
+        }
+
+        .box2_in {
+            width: 150px;
+            height: 150px;
+            background-color: burlywood;
+            transform: rotate(0deg);
+            transform-origin: 0 0;
+            transition: all 0.7s;
+        }
+
+        .box2:hover .box2_in {
+            transform: rotate(360deg);
+        }
+
+        .box3 {
+            margin-top: 100px;
+            width: 150px;
+            height: 150px;
+            border: 2px solid #000;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .box3_in {
+            width: 150px;
+            height: 150px;
+            background-color: burlywood;
+            transform: translate(0, 0);
+            transition: all 0.7s;
+        }
+
+        .box3:hover .box3_in {
+            transform: translate(1000px, 0);
+        }
+
+
+        .box4 {
+            margin-top: 100px;
+            width: 150px;
+            height: 150px;
+            border: 2px solid #000;
+            cursor: pointer;
+        }
+
+        .box4-1 {
+            width: 150px;
+            height: 150px;
+            border: 2px solid #000;
+            cursor: pointer;
+            transition: all 0.7s ease-in-out;
+        }
+
+        .box4:hover+.box4-1 {
+            transform: translate(1000px, 0);
+        }
+
+        .box5 {
+            margin-top: 100px;
+            width: 150px;
+            height: 150px;
+            border: 2px solid #000;
+            cursor: pointer;
+        }
+
+        .box6 {
+            margin-top: 10px;
+            width: 150px;
+            height: 150px;
+            border: 2px solid #000;
+            cursor: pointer;
+        }
+
+        .box7 {
+            margin-top: 10px;
+            width: 150px;
+            height: 150px;
+            border: 2px solid #000;
+            cursor: pointer;
+            transform: translate(0, 0);
+            transition: all .7s;
+        }
+
+        .box5:hover~.box7 {
+            transform: translate(1000px, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 자기 자신에게 애니메이션효과 -->
+
+    <div class="box1">box1</div>
+
+    <div class="box1-1">box1-1</div>
+
+    <div class="box1-2">box1-2</div>
+
+    <div class="box1-3">box1-3</div>
+
+    <!-- 자식요소에 애니메이션효과 -->
+    <div class="box2">
+        <div class="box2_in">box2_in</div>
+    </div>
+
+    <div class="box3">
+        <div class="box3_in">box3_in</div>
+    </div>
+
+    <!-- 인접한 형제요소에 애니메이션효과 -->
+    <div class="box4">box4</div>
+    <div class="box4-1">box4-1</div>
+
+    <div class="box5">box5</div>
+    <div class="box6">box6</div>
+    <div class="box7">box7</div>
+
+
+</body>
+
+</html>

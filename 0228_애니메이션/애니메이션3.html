@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #000;
+        }
+
+        .box1 {
+            animation-name: ani01;
+            animation-delay: 0s;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            background-color: red;
+            font-size: 5px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        /* 5초를 키르페임에서 100%설정*/
+        @keyframes ani01 {
+            from {
+                transform: translate(0, 0) rotate(0deg);
+
+            }
+
+            90% {
+                transform: translate(1000px, 0) rotate(360deg);
+
+            }
+
+            to {
+                transform: translate(1000px, 0) rotate(360deg);
+            }
+
+            /*100%{}*/
+        }
+
+        .box2 {
+            animation-name: ani02;
+            animation-delay: 1s;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            background-color: orange;
+            font-size: 11px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        /* 5초를 키르페임에서 100%설정*/
+        @keyframes ani02 {
+            from {
+                transform: translate(0, 0) rotate(0deg);
+
+            }
+
+            90% {
+                transform: translate(1000px, 0) rotate(360deg);
+
+            }
+
+            to {
+                transform: translate(1000px, 0) rotate(360deg);
+            }
+
+            /*100%{}*/
+        }
+
+        .box3 {
+            animation-name: ani03;
+            animation-delay: 2s;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            background-color: yellow;
+            font-size: 30px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        /* 5초를 키르페임에서 100%설정*/
+        @keyframes ani03 {
+            from {
+                transform: translate(0, 0) rotate(0deg);
+
+            }
+
+            90% {
+                transform: translate(1000px, 0) rotate(360deg);
+
+            }
+
+            to {
+                transform: translate(1000px, 0) rotate(360deg);
+            }
+
+            /*100%{}*/
+        }
+
+        .box4 {
+            animation-name: ani04;
+            animation-delay: 3s;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            background-color: green;
+            font-size: 20px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        /* 5초를 키르페임에서 100%설정*/
+        @keyframes ani04 {
+            from {
+                transform: translate(0, 0) rotate(0deg);
+
+            }
+
+            90% {
+                transform: translate(1000px, 0) rotate(360deg);
+
+            }
+
+            to {
+                transform: translate(1000px, 0) rotate(360deg);
+            }
+
+            /*100%{}*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+</body>
+
+</html>

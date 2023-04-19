@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 150px;
+            height: 150px;
+            transform: translate(0px, 0px);
+            background-color: aqua;
+        }
+
+        .box1:hover {
+            width: 150px;
+            height: 150px;
+            transform: translate(100px, 0px);
+        }
+
+        .box2 {
+            margin-top: 100px;
+            width: 150px;
+            height: 150px;
+            border: 3px solid #000;
+        }
+
+        .box2_in {
+            width: 150px;
+            height: 150px;
+            border: 3px solid #000;
+            transform: rotate(45deg);
+            transition: all 0.5s;
+        }
+
+        .box2:hover .box2_in {
+            transform: rotate(360deg);
+        }
+
+        .box3 {
+            margin: 200px;
+            width: 150px;
+            height: 150px;
+            transform: scale(0.5);
+            background-color: blueviolet;
+            transition: all 0.5s;
+        }
+
+        .box3:hover {
+            transform: scale(1.5);
+        }
+
+        .box4 {
+            margin: 200px;
+            width: 150px;
+            height: 150px;
+            /* transform: scale(0.5); */
+            background-color: blueviolet;
+            transition: all 0.5s;
+        }
+
+        .box4:hover {
+            width: 500px;
+            /* transform: scale(1.5); */
+        }
+
+        .box5 {
+            margin: 200px;
+            width: 150px;
+            height: 150px;
+            transform: scaleX(0.5);
+            background-color: blueviolet;
+            transition: all 0.5s;
+        }
+
+        .box5:hover {
+            transform: scaleX(1.5);
+        }
+
+        .box6 {
+            margin: 200px;
+            width: 150px;
+            height: 150px;
+            transform: skew(-45deg, 0);
+            background-color: blueviolet;
+
+        }
+
+        .box6-1 {
+            margin: 200px;
+            width: 150px;
+            height: 150px;
+            transform: skew(0, -45deg);
+            background-color: blueviolet;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">box1</div>
+
+    <div class="box2">
+        <div class="box2_in"></div>
+    </div>
+
+    <div class="box3">box3</div>
+
+    <div class="box4">box4</div>
+
+    <div class="box5">box5</div>
+
+    <div class="box6">box6</div>
+
+    <div class="box6-1">box6-1</div>
+
+</body>
+
+</html>

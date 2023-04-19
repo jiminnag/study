@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일선택자</title>
+    <style>
+        * {
+            font-size: 50px;
+            color: tomato;
+            font-family: '바탕체';
+        }
+
+        h1 {
+            color: aqua;
+        }
+
+        p {
+            font-size: 20px;
+            color: rgb(191, 105, 0);
+        }
+
+        #text01 {
+            font-size: 100px;
+        }
+
+        .text02 {
+            color: #000;
+        }
+
+        /*
+        .text03+span {
+            color: red;
+            font-size: 60px;
+        }
+        */
+
+        .text03~span {
+            color: blue;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>코리아IT아카데미학원</h1>
+    <h3 class="text02">프론트엔드개발</h3>
+    <h3 class="text02">백엔드개발</h3>
+    <p id="text01">웹디자인</p>
+    <p>웹퍼블리셔</p>
+    <p>웹프로그래머</p>
+    <span class="text03">HTML</span>
+    <span>CSS</span>
+    <span>Javascript</span>
+    <b>react</b><b>node.js</b>
+
+</body>
+
+</html>

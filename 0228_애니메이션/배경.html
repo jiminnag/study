@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 10px solid #000;
+        }
+
+        .box1 {
+            background-color: blueviolet;
+            opacity: 0.3;
+        }
+
+        .box2 {
+            background-color: rgba(247, 94, 5, 0.3);
+            transition: all 0.5s;
+        }
+
+        .box2:hover {
+            background-color: rgba(247, 94, 5, 1);
+
+        }
+
+        .box3 {
+            background-color: hsla(42, 100% 5% 1);
+
+        }
+
+        .gra {
+            margin-top: 20px;
+            width: 500px;
+            height: 200px;
+            border: 2px solid #000;
+            background-color: antiquewhite;
+
+        }
+
+        .box4-1 {
+            background: -webkit-linear-gradient(left, red, blue);
+        }
+
+        .box4-2 {
+            background: -webkit-linear-gradient(45deg, red, blue);
+        }
+
+        .box4-3 {
+            background: -webkit-linear-gradient(0deg, red, blue, green);
+        }
+
+        .box4-4 {
+            width: 300px;
+            height: 300px;
+            background: -webkit-radial-gradient(red, blue)
+        }
+
+        .box4-5 {
+            width: 300px;
+            height: 300px;
+            background: -webkit-radial-gradient(red 50%, blue 70%)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1 box"></div>
+    <div class="box2 box"></div>
+    <div class="box3 box"></div>
+    <br><br><br><br><br><br><br><br>
+
+    <div class="box4-1 gra"></div>
+    <div class="box4-2 gra"></div>
+    <div class="box4-3 gra"></div>
+    <div class="box4-4 gra"></div>
+    <div class="box4-5 gra"></div>
+
+
+</body>
+
+</html>

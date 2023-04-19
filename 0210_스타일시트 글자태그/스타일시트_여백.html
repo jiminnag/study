@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일선언</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {}
+
+        .box1 {
+            float: left;
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            /*margin: 100px 200px 50px 400px;*/
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .box2 {
+            float: left;
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+
+        }
+
+        .box3 {
+            clear: both;
+            float: left;
+            width: 300px;
+            height: 300px;
+            background-color: rgb(153, 153, 122);
+
+
+        }
+
+        .box4 {
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            border: 5px solid #000;
+            padding: 50px 0 0 30px;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            font-size: 15px;
+            color: #555;
+            border: 2px solid #555;
+            padding: 5px 12px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        margin: 요소의 테두를 기준으로 바깥쪽 여백
+        margin: 0 0; 마진의 세로값 가로값
+        margin:0 0 0; 위 좌우 아래
+        margin: 0 0 0 0; top right bottom left
+        margin-top, margin-right, margin-bottom, margin-left 하나하나 마진을 적용할때
+
+        padding:요소의 테두를 기준으로 안쪽 여백
+        padding: 0 0; 패딩의 세로값 가로값
+        padding:0 0 0; 위 좌우 아래
+        padding: 0 0 0 0; top right bottom left
+        padding-top, padding-right, padding-bottom, padding-left 하나하나 패딩을 적용할때
+     -->
+    <!-- <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div> -->
+
+    <!-- 
+        자신을 가운데 정렬은 margin:0 auto를 합니다 
+        단 조건이 있음 좌우에는 다른 요소가 없었야 하고 자신은 가로 크기가 설정되었야 함 
+    -->
+    <div class="box4">box4</div>
+    <a href="" class="btn">바로가기</a>
+</body>
+
+</html>
