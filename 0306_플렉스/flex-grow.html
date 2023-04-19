@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            width: 100%;
+            background-color: blanchedalmond;
+            display: flex;
+        }
+
+        section article {
+            background-color: aqua;
+            border: 1px solid #000;
+            box-sizing: border-box;
+            font-size: 50px;
+            color: #fff;
+            display: flex;
+        }
+
+        section article:nth-child(1) {
+            flex-grow: 1;
+        }
+
+        section article:nth-child(2) {
+            flex-grow: 2;
+        }
+
+        section article:nth-child(3) {
+            flex-grow: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <article>flex grow</article>
+        <article>flex grow</article>
+        <article>flex grow</article>
+    </section>
+
+</body>
+
+</html>

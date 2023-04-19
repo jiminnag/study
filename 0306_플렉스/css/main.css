@@ -1,0 +1,313 @@
+#wrap {
+    width: 100%;
+}
+
+#header {
+    width: 100%;
+    height: 140px;
+}
+
+#header .logo {
+    padding: 40px 0;
+    text-align: center;
+    font-size: 34px;
+    font-family: '바탕체';
+    font-weight: 900;
+}
+
+#header .nav {
+    margin: 0 auto;
+    width: 780px;
+    height: 78px;
+}
+
+#header .nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header .nav a {
+    font-size: 18px;
+}
+
+
+#main_img {
+    width: 100%;
+    height: 810px;
+    background: url(../images/visual.jpg) no-repeat 0 0;
+    background-size: 100% 100%;
+
+}
+
+#contents {
+    width: 100%;
+}
+
+#best {
+    margin: 0 auto;
+    width: 1200px;
+    height: 715px;
+}
+
+#best_h {
+    width: 100%;
+    height: 70px;
+    padding: 30px 0 0 5px;
+    box-sizing: border-box;
+}
+
+#best_h h3 {
+    font-size: 18px;
+    color: #000;
+}
+
+#best_b {
+    width: 100%;
+}
+
+#best_b .b_img {
+    float: left;
+    width: 600px;
+    height: 620px;
+    border: 1px solid #ccc;
+}
+
+#best_b .b_img h4 {
+    float: left;
+    margin-top: 60px;
+    padding: 0 30px;
+    font-size: 38px;
+}
+
+#best_b .b_img .group {
+    float: left;
+    margin-top: 60px;
+}
+
+#best_b .b_img .group h5 {
+
+    font-size: 20px;
+}
+
+#best_b .b_img .group p {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+#best_b .b_img a {
+    float: right;
+    margin: 65px 30px 0 0;
+    font-size: 16px;
+    color: rgb(75, 13, 75);
+}
+
+#best_b .list {
+    float: right;
+    width: 550px;
+    height: 620px;
+}
+
+#best_b .list ul {
+    width: 100%;
+}
+
+#best_b .list li {
+    width: 100%;
+    height: 110px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+#best_b .list h4 {
+    float: left;
+    margin-top: 40px;
+    padding: 0 34px;
+    font-size: 38px;
+}
+
+#best_b .list img {
+    float: left;
+}
+
+#best_b .list .group {
+    float: left;
+    padding: 35px 0 0 30px;
+}
+
+#best_b .list h5 {
+    font-size: 20px;
+}
+
+#best_b .list p {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+#best_b .list a {
+    float: right;
+    margin: 60px 0 0 0;
+    font-size: 16px;
+    color: rgb(75, 13, 75);
+}
+
+#banner {
+    margin: 0 auto;
+    width: 1200px;
+    height: 135px;
+}
+
+#event {
+    margin: 0 auto;
+    width: 1200px;
+    height: 760px;
+}
+
+#event_h {
+    width: 100%;
+    height: 70px;
+    padding: 30px 0 0 5px;
+    box-sizing: border-box;
+}
+
+#event_h h3 {
+    font-size: 18px;
+    color: #000;
+}
+
+#event_b {
+    width: 100%;
+    height: 520px;
+}
+
+#event_b .event_li {
+    float: left;
+    margin-right: 45px;
+    width: 370px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#event_b .event_li:last-child {
+    margin-right: 0px;
+}
+
+#event_b .event_li figcaption {
+    padding: 25px 22px 30px 22px;
+    width: 100%;
+}
+
+#event_b .event_li h4 {
+    font-size: 20px;
+}
+
+#event_b .event_li p {
+    margin-top: 12px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+#event_b .event_li span {
+    font-size: 16px;
+    margin-right: 200px;
+}
+
+#event_b .event_li a {
+    font-size: 16px;
+    color: violet;
+}
+
+#event_f {
+    width: 100%;
+    height: 170px;
+    text-align: center;
+    line-height: 170px;
+}
+
+#event_f a {
+    font-size: 20px;
+}
+
+#footer {
+    width: 100%;
+    height: 320px;
+    border-top: 1px solid #ccc;
+}
+
+#footer_top {
+    margin: 0 auto;
+    width: 1200px;
+    height: 150px;
+}
+
+#footer_top li {
+    float: left;
+
+}
+
+#footer_top li:nth-child(1) {
+    width: 27%;
+    padding-top: 30px;
+
+}
+
+#footer_top li:nth-child(2) {
+    padding-top: 50px;
+    width: 50%;
+}
+
+#footer_top li:nth-child(3) {
+    padding-top: 50px;
+    width: 20%;
+}
+
+#footer_top span {
+    display: block;
+    font-size: 10px;
+    margin-bottom: 6px;
+}
+
+#footer_top h4 {
+    font-size: 26px;
+}
+
+#footer_top h5 {
+    font-size: 34px;
+}
+
+#footer_top p {
+    margin-top: 6px;
+    font-size: 15px;
+}
+
+#footer_top li img {
+    width: 270px;
+}
+
+#footer_bottom {
+    border-top: 1px solid #ccc;
+    width: 100%;
+    height: 170px;
+}
+
+#footer_bottom .info_mn {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#footer_bottom .info_mn a {
+    font-size: 15px;
+}
+
+#footer_bottom .address {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 550px;
+    height: 100px;
+    text-align: center;
+}

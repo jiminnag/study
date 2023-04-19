@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin-top: 20px;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            border: 2px solid blue;
+            position: absolute;
+
+
+        }
+
+        #box1 {
+            top: 50px;
+            left: 0px;
+            transform: rotate(0deg);
+        }
+
+        #box2 {
+            top: 250px;
+            left: 100px;
+
+        }
+
+        #box3 {
+            top: 450px;
+            left: 200px;
+        }
+
+        #box4 {
+            top: 650px;
+            left: 300px;
+        }
+
+        #box5 {
+            top: 850px;
+            left: 400px;
+        }
+
+        input {
+
+            height: 50px;
+        }
+    </style>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.easing.1.3.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#box1')
+                .delay(0)
+                .css({ left: '0px', transform: rotate('0deg') })
+                .animate({
+                    left: '1000px', transform: rotate('360deg')
+                }, 800)
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="box1" class="box">box1</div>
+
+</body>
+
+</html>
