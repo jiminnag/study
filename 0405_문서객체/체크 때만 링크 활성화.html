@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let status = false;
+            const checkbox = document.querySelector('input');
+
+            /*
+             const checkbox = document.querySelectorAll('input');
+             const checkbox = document.getElementsByClassName('input')
+             const checkbox = document.getElementsByTagName('input')
+ 
+             imgs.forEach((i) => {
+                 img[i].메소드();
+             })
+ 
+ 
+             for (let i = 0; i < img.length; i++) {
+                 img[i].메소드();
+             }
+            */
+
+            checkbox.addEventListener('change', (event) => {
+                status = event.currentTarget.checked; //true
+            })
+            //event.target 현재 이벤트가 적용된 대상을 선택하기 위해 
+            //$(this):현재함수에 이벤트가 적용된 대상
+
+            const link = document.querySelector('a');
+            link.addEventListener('click', () => {
+                if (!status) {//status = false
+                    event.preventDefault();//href 속성이 미적용
+                }
+            })
+
+        });
+    </script>
+</head>
+
+<body>
+    <input type="checkbox">
+    <!-- 체크가되었음 true 체크가 안되었다면 false -->
+    <span>링크 활성화</span>
+    <br>
+    <a href="http://naver.com">네이버로가기</a>
+</body>
+
+</html>

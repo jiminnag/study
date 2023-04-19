@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #wrap {
+            width: 100%;
+            padding-bottom: 400px;
+        }
+
+        #header {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            margin-left: -600px;
+            width: 1200px;
+            height: 100px;
+            background-color: yellowgreen;
+        }
+
+        #header li {
+            float: left;
+            margin-right: 50px;
+        }
+
+        #header li.on a {
+            color: black;
+            font-weight: 900;
+        }
+
+        #contents {
+            margin: 0 auto;
+            width: 1200px;
+        }
+
+        #contents>div {
+            padding-top: 100px;
+            width: 100%;
+            height: 800px;
+        }
+
+        #contents #con1 {
+            background-color: yellow;
+        }
+
+        #contents #con2 {
+            background-color: rgb(24, 231, 231);
+        }
+
+        #contents #con3 {
+            background-color: rgb(143, 41, 226);
+        }
+    </style>
+    <script src="./js/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            var menu = $('#header>.menu > li');
+            var contents = $('#contents > div');
+
+            menu.click(function (e) {
+                e.preventDefault();
+
+                var tg = $(this);
+                var i = tg.index();
+
+                var section = contents.eq(i);
+                var target = section.offset().top;
+
+                $('html,body').stop().animate({ scrollTop: target });
+            });
+
+            $(window).scroll(function () {
+                var sct = $(window).scrollTop();
+
+                contents.each(function () {
+                    var tg = $(this);
+                    var i = tg.index();//0 1 2
+                    if (tg.offset().top <= sct) {
+                        menu.removeClass('on');
+                        menu.eq(i).addClass('on');
+                    }
+                })
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">
+            <ul class="menu">
+                <li class="on"><a href="#con1">con1</a></li>
+                <li><a href="#con2">con2</a></li>
+                <li><a href="#con3">con3</a></li>
+            </ul>
+        </div>
+        <div id="contents">
+            <div id="con1">con1</div>
+            <div id="con2">con2</div>
+            <div id="con3">con3</div>
+        </div>
+    </div>
+</body>
+
+</html>

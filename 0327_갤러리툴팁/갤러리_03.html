@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #gallery {
+            margin: 50px;
+            width: 610px;
+            height: 280px;
+            border: 1px double #000
+        }
+
+        #gallery ul {
+            float: left;
+        }
+
+        #gallery ul li {
+            width: 105px;
+        }
+
+        #gallery ul li img {
+            float: left;
+            width: 100%;
+        }
+
+        #gallery div {
+            float: left;
+            margin-left: 5px;
+            width: 500px;
+
+            /* overflow: hidden; */
+        }
+
+        .caption {
+            position: relative;
+            left: -5px;
+            padding: 10px;
+            font-size: 12px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 1px solid #ccc;
+            width: 500px;
+
+        }
+    </style>
+    <script src="./js/jquery.js"></script>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <div id="gallery">
+        <ul class="btns">
+            <li><a href="./images/pic1.jpg"><img src="./images/th_pic1.jpg" /></a>
+                <em>1번이미지 설명</em>
+            </li>
+            <li><a href="./images/pic2.jpg"><img src="./images/th_pic2.jpg" /> </a>
+                <em>
+                    2번이미지 설명<br />
+                    2번이미지 설명
+                </em>
+            </li>
+            <li><a href="./images/pic3.jpg"><img src="./images/th_pic3.jpg" /> </a>
+                <em>
+                    3번이미지 설명<br />
+                    3번이미지 설명<br />
+                    3번이미지 설명
+                </em>
+            </li>
+        </ul>
+        <div class="largeImg">
+            <img src='./images/pic1.jpg' alt='' />
+        </div>
+    </div>
+</body>
+
+</html>
